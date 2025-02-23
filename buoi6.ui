@@ -6,25 +6,73 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>605</width>
+    <height>152</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>640</width>
-     <height>26</height>
-    </rect>
-   </property>
+  <property name="styleSheet">
+   <string notr="true">/* Style cho toàn bộ giao diện */
+QWidget {
+    background-color: #013a63; /* Màu xanh biển đậm */
+}
+
+/* Style cho QPushButton */
+QPushButton {
+    background-color: #0288d1; /* Màu xanh biển nhạt hơn để nút nổi bật */
+    color: white; /* Màu chữ trắng */
+    border: 2px solid #0277bd; /* Viền nút đậm hơn */
+    border-radius: 8px; /* Bo góc nút */
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    font-size: 14px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    transition: all 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+/* Hiệu ứng hover cho QPushButton */
+QPushButton:hover {
+    background-color: #01579b; /* Màu xanh biển đậm hơn khi hover */
+    border: 2px solid #013a63; /* Viền thay đổi khi hover */
+    color: #e1f5fe; /* Màu chữ sáng hơn */
+}
+
+/* Hiệu ứng khi nhấn nút */
+QPushButton:pressed {
+    background-color: #004d73; /* Màu tối hơn khi nút bị nhấn */
+    border: 2px solid #002f4b; /* Viền tối hơn khi nhấn */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>40</y>
+      <width>93</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

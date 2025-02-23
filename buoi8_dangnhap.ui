@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>412</width>
+    <height>298</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Đăng Nhập</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f4f4f4;
+    border: 1px solid #d3d3d3;
+    font-family: &quot;Times New Roman&quot;, Times, serif;
+}
+
+QWidget {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QLabel {
+    font-size: 14px;
+    color: #333333;
+    padding-right: 10px;
+}
+
+QLineEdit {
+    font-size: 14px;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+QPushButton {
+    background-color: #8a8a8a;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #6c6c6c;
+}
+
+QPushButton:pressed {
+    background-color: #4f4f4f;
+}
+
+QMenuBar {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+QStatusBar {
+    background-color: #f1f1f1;
+    border-top: 1px solid #e0e0e0;
+}
+
+QFormLayout {
+    margin-top: 15px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>311</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_2"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Chưa có tài khoản ?</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Đăng Nhập</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

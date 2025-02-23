@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>371</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f4e1d2; /* Màu nền cổ điển, sáng nhẹ */
+    border: 1px solid #bfa48c; /* Viền màu vàng nhẹ, tạo cảm giác cổ điển */
+}
+
+QPushButton {
+    background-color: #8b5f39; /* Nền màu nâu gỗ */
+    color: white; /* Chữ màu trắng */
+    font-family: &quot;Georgia&quot;, serif; /* Font chữ cổ điển */
+    font-size: 16px; /* Kích thước chữ vừa phải */
+    padding: 10px 20px; /* Khoảng cách giữa chữ và viền */
+    border-radius: 5px; /* Bo góc mềm mại */
+    border: 2px solid #bfa48c; /* Viền mảnh màu vàng nhẹ */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+}
+
+QPushButton:hover {
+    background-color: #a87655; /* Màu nền đậm hơn khi hover */
+    border-color: #b17b52; /* Viền đổi màu khi hover */
+}
+
+QLabel {
+    color: #5c3d2e; /* Màu chữ nâu sáng */
+    font-family: &quot;Georgia&quot;, serif; /* Font chữ cổ điển */
+    font-size: 14px; /* Kích thước chữ vừa phải */
+    font-style: italic; /* Chữ nghiêng tạo cảm giác vintage */
+}
+
+QLineEdit {
+    background-color: #f1e4d6; /* Màu nền nhẹ nhàng */
+    border: 1px solid #bfa48c; /* Viền màu vàng nhạt */
+    padding: 8px; /* Khoảng cách giữa chữ và viền */
+    font-family: &quot;Georgia&quot;, serif; /* Font chữ cổ điển */
+    font-size: 14px; /* Kích thước chữ vừa phải */
+    color: #5c3d2e; /* Màu chữ nâu sáng */
+}
+
+QLineEdit:focus {
+    border: 2px solid #8b5f39; /* Viền đậm khi đang focus */
+}
+
+QMenuBar {
+    background-color: #bfa48c; /* Nền thanh menu màu vàng nhạt */
+    color: white; /* Chữ màu trắng */
+    font-family: &quot;Georgia&quot;, serif; /* Font chữ cổ điển */
+}
+
+QStatusBar {
+    background-color: #8b5f39; /* Nền thanh trạng thái màu nâu */
+    color: white; /* Chữ màu trắng */
+    font-family: &quot;Georgia&quot;, serif; /* Font chữ cổ điển */
+}
+
+QWidget {
+    font-family: &quot;Georgia&quot;, serif; /* Font chữ cổ điển cho tất cả widget */
+    color: #5c3d2e; /* Màu chữ nâu sáng */
+}
+
+QPushButton#pushButton, QPushButton#pushButton_2 {
+    background-color: #a87655; /* Nền của nút bấm khi hover */
+    border: 2px solid #b17b52;
+}
+
+QPushButton#pushButton_2 {
+    background-color: #8b5f39; /* Màu nền của nút Đăng Ký */
+    color: white;
+    font-family: &quot;Georgia&quot;, serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #bfa48c;
+}
+
+QPushButton#pushButton_2:hover {
+    background-color: #a87655;
+    border-color: #b17b52;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>371</width>
+      <height>249</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Đăng Kí</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Tên Đăng Nhập</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Mật Khẩu</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit_2"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Xác Nhận Mật Khẩu</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_3"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Đã có tài khoản?</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Đăng Kí</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>718</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
